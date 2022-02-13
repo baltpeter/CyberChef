@@ -9,7 +9,7 @@ import OperationConfig from "../../core/config/OperationConfig.json" assert { ty
  * @license Apache-2.0
  */
 
-const baseUrl = "https://gchq.github.io/CyberChef/";
+const baseUrl = "https://cyberchef.bn.al/";
 
 const smStream = new sm.SitemapStream({});
 
