@@ -389,7 +389,7 @@ class ControlsWaiter {
         e.preventDefault();
 
         const reportBugInfo = document.getElementById("report-bug-info");
-        const saveLink = this.generateStateUrl(true, true, null, null, "https://gchq.github.io/CyberChef/");
+        const saveLink = this.generateStateUrl(true, true, null, null, "https://cyberchef.bn.al/");
 
         if (reportBugInfo) {
             reportBugInfo.innerHTML = `* Version: ${PKG_VERSION}

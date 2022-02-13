@@ -148,9 +148,9 @@
         <div id="content-wrapper">
             <div id="banner" class="row">
                 <div class="col" style="text-align: left; padding-left: 10px;">
-                    <a href="#" data-toggle="modal" data-target="#download-modal" data-help-title="Downloading CyberChef" data-help="<p>CyberChef can be downloaded to run locally or hosted within your own network. It has no server-side component so all that is required is that the ZIP file is uncompressed and the files are accessible.</p><p>As a user, it is worth noting that unofficial versions of CyberChef could have been modified to introduce Input and/or Recipe exfiltration. We recommend always using the official, open source, up-to-date version of CyberChef hosted at <a href='https://gchq.github.io/CyberChef'>https://gchq.github.io/CyberChef</a> if accessible.</p><p>The Network tab in your browser's Developer console (F12) can be used to inspect the network requests made by a website. This can confirm that no data is uploaded when a CyberChef recipe is baked.</p>">Download CyberChef <i class="material-icons">file_download</i></a>
+                    <a href="https://github.com/baltpeter/CyberChef" download>cyberchef.bn.al</a>
                 </div>
-                <div class="col-md-6" id="notice-wrapper">
+                <div id="notice-wrapper">
                     <span id="notice">
                         <script type="text/javascript">
                             // Must be text/javascript rather than application/javascript otherwise IE won't recognise it...
@@ -163,6 +163,9 @@
                     </span>
                 </div>
                 <div class="col" style="text-align: right; padding-right: 0;">
+                    <a href="https://benjamin-altpeter.de/privacy/" target="_blank">Privacy Policy <i class="material-icons">privacy_tip</i></a>
+                    <a href="https://benjamin-altpeter.de/contact/" target="_blank">Legal Notice <i class="material-icons">contact_page</i></a>
+                    <a href="#" data-toggle="modal" data-target="#download-modal" data-help-title="Downloading CyberChef" data-help="<p>CyberChef can be downloaded to run locally or hosted within your own network. It has no server-side component so all that is required is that the ZIP file is uncompressed and the files are accessible.</p><p>As a user, it is worth noting that unofficial versions of CyberChef could have been modified to introduce Input and/or Recipe exfiltration. We recommend always using the official, open source, up-to-date version of CyberChef hosted at <a href='https://gchq.github.io/CyberChef'>https://gchq.github.io/CyberChef</a> if accessible.</p><p>The Network tab in your browser's Developer console (F12) can be used to inspect the network requests made by a website. This can confirm that no data is uploaded when a CyberChef recipe is baked.</p>">Download CyberChef <i class="material-icons">file_download</i></a>
                     <a href="#" id="options" data-help-title="Options and Settings" data-help="Configurable options to change how CyberChef behaves. These settings are stored in your browser's local storage, meaning they will persist between sessions that use the same browser profile.">Options <i class="material-icons">settings</i></a>
                     <a href="#" id="support" data-toggle="modal" data-target="#support-modal" data-help-title="About / Support" data-help="This pane provides information about the CyberChef web app, how to use some of the features, and how to raise bug reports.">About / Support <i class="material-icons">help</i></a>
                 </div>
@@ -568,7 +571,7 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content" data-help-proxy="#support">
                     <div class="modal-header">
-                        <h5 class="modal-title">CyberChef - The Cyber Swiss Army Knife</h5>
+                        <h5 class="modal-title">CyberChef - The Cyber Swiss Army Knife<br><small>forked version at cyberchef.bn.al to allow me to merge changes more quickly</small></h5>
                     </div>
                     <div class="modal-body">
                         <img aria-hidden="true" class="about-img-left" src="<%- require('../static/images/cyberchef-128x128.png') %>" alt="CyberChef Logo"/>
@@ -578,9 +581,7 @@
                         </p>
                         <p>&copy; Crown Copyright 2016-<%= htmlWebpackPlugin.options.compileYear %>.</p>
                         <p>Released under the Apache Licence, Version 2.0.</p>
-                        <p><a href="https://gitter.im/gchq/CyberChef">
-                            <img src="<%- require('../static/images/gitter-badge.svg') %>">
-                        </a></p>
+                        <p><a href="https://benjamin-altpeter.de/privacy/" target="_blank" class="btn btn-outline-primary">Privacy Policy</a> <a href="https://benjamin-altpeter.de/contact/" target="_blank" class="btn btn-outline-primary">Legal Notice</a> <a href="https://github.com/baltpeter/CyberChef/blob/master/LICENSE" class="btn btn-outline-primary" target="_blank">License</a></p>
 
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item" role="presentation">
