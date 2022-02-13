@@ -174,6 +174,26 @@ import "./tests/JA3Fingerprint.mjs";
 import "./tests/JA3SFingerprint.mjs";
 import "./tests/HASSH.mjs";
 import "./tests/JSONtoYAML.mjs";
+import "./tests/GetAllCasings.mjs";
+import "./tests/SIGABA.mjs";
+import "./tests/ELFInfo.mjs";
+import "./tests/Subsection.mjs";
+import "./tests/CaesarBoxCipher.mjs";
+import "./tests/UnescapeString.mjs";
+import "./tests/LS47.mjs";
+import "./tests/LZString.mjs";
+import "./tests/NTLM.mjs";
+import "./tests/Shuffle.mjs";
+import "./tests/FletcherChecksum.mjs";
+import "./tests/CMAC.mjs";
+import "./tests/AESKeyWrap.mjs";
+import "./tests/Rabbit.mjs";
+import "./tests/LevenshteinDistance.mjs";
+import "./tests/SwapCase.mjs";
+import "./tests/HKDF.mjs";
+import "./tests/GenerateDeBruijnSequence.mjs";
+
+import "./tests/QueryString.mjs";
 
 // Cannot test operations that use the File type yet
 // import "./tests/SplitColourChannels.mjs";
