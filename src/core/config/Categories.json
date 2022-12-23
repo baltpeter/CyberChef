@@ -467,6 +467,7 @@
             "JavaScript Minify",
             "JSON Beautify",
             "JSON Minify",
+            "JSON Parse",
             "JSON Stringify",
             "XML Beautify",
             "XML Minify",
