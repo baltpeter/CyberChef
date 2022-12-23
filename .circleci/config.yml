@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: cimg/node:10.24
+      - image: cimg/node:18.20
     resource_class: large # Actually necessary. Doesn't build on `small`. Haven't tested the classes in-between.
     steps:
       - checkout
@@ -27,14 +27,14 @@ jobs:
             - .cache
   deploy:
     docker:
-      - image: cimg/node:14.19 # Dattel isn't compatible with Node < 12 but CyberChef requires 10. :(
+      - image: cimg/node:18.3
     resource_class: medium
     steps:
       - attach_workspace:
             at: ~/
       - run:
           command: |
-            sudo npm i -g dattel-client
+            npm i -g dattel-client
             dattel deploy
 
 workflows:
