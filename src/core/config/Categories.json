@@ -391,7 +391,9 @@
             "Extract Audio Metadata",
             "Extract Files",
             "RAKE",
-            "Template"
+            "Template",
+
+            "Extract Windows product keys from BIOS dump"
         ]
     },
     {
