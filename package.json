@@ -106,6 +106,7 @@
     "avsc": "^5.7.7",
     "bcryptjs": "^2.4.3",
     "bignumber.js": "^9.1.2",
+    "bios-info": "^1.0.0",
     "blakejs": "^1.2.1",
     "bootstrap": "4.6.2",
     "bootstrap-colorpicker": "^3.4.0",

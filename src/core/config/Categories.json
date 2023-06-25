@@ -378,7 +378,9 @@
             "Extract ID3",
             "Extract Files",
             "RAKE",
-            "Template"
+            "Template",
+
+            "Extract Windows product keys from BIOS dump"
         ]
     },
     {
