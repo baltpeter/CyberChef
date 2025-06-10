@@ -1,6 +1,7 @@
 "use strict";
 
 const webpack = require("webpack");
+const TerserPlugin = require("terser-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const glob = require("glob");
@@ -142,7 +143,14 @@ module.exports = function (grunt) {
                         reportFilename: "BundleAnalyzerReport.html",
                         openAnalyzer: false
                     }),
-                ]
+                ],
+                optimization: {
+                    minimizer: [
+                        new TerserPlugin({
+                            parallel: 2,
+                        }),
+                    ],
+                },
             };
         };
 
